@@ -1,0 +1,8 @@
+// frist program
+Class Fristprg
+{
+	public Static void main(String args[])
+	{
+		System.Out.println("helo");
+	}
+}

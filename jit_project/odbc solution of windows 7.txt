@@ -1,0 +1,7 @@
+After successfully installing Oracle 10g express edition on a windows 7 64-bit system several problems occurred while using it. I like to share the problems I encountered and the solutions I have found. 
+
+IE8 problem
+When opening the Oracle database homepage in Internet Explorer 8 (IE8) 32-bit version and after login everything works fine except when clicking on the “Object Browser” icon a page not found (HTTP error-404) occurs. With IE8 64-bit the error doesn’t occur. I didn’t found the cause for this, anyone know why?
+
+ODBC problem with Data Source Administrator
+The Oracle ODBC driver is located in C:\oraclexe\app\oracle\product\10.2.0\server\BIN\sqora32.dll and is registered as a 32-bit driver. But the default ODBC Data Source Administrator only shows the 64-bit drivers that’s why you don’t see the Oracle ODBC driver in the driver list. The solution is to start the 32-bit version of the ODBC Data Source Administrator. You can find this version in the location  The default 64-bit ODBC Data Source Administrator is located in %windir%\system32\odbcad32.exe

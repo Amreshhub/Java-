@@ -1,0 +1,150 @@
+import java.awt.*;
+import java.awt.event.*;
+class refome extends Frame implements ActionListener
+{
+	Label l1,l2;
+	List li1,li2;
+	Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
+public void de()
+{
+	l1=new Label("Avalabel iteam");
+	l2=new Label("Selected iteam");
+	li1=new List();
+	li2=new List();
+	b1=new Button(">");
+	b2=new Button(">|");
+	b3=new Button("<");
+	b4=new Button("|<");
+	b5=new Button("Remove");
+	b6=new Button("Remove All");
+	b7=new Button("Remove");
+	b8=new Button("Remove All");
+	b9=new Button("Exit");
+		setLayout(null);
+	l1.setBounds(30,30,100,40);
+	l2.setBounds(250,30,100,40);
+	li1.setBounds(40,150,100,150);
+	li2.setBounds(250,40,100,150);
+	b1.setBounds(155,170,50,20);
+	b2.setBounds(155,200,50,20);
+	b3.setBounds(155,230,50,20);
+	b3.setBounds(155,260,50,20);
+	b4.setBounds(155,290,50,20);
+	b5.setBounds(40,170,100,30);
+	b6.setBounds(40,200,100,30);
+	b7.setBounds(250,200,100,30);
+	b8.setBounds(250,230,100,30);
+	b9.setBounds(155,220,120,40);
+	setBounds(30,30,1000,1000);
+		show();
+
+	add(li1);
+	add(li2);
+	add(l1);
+	add(l2);
+	add(b1);
+	add(b2);
+	add(b3);
+	add(b4);
+	add(b5);
+	add(b6);
+	add(b7);
+	add(b8);
+	add(b9);
+
+	li1.add("BOOK");
+	li1.add("PEN");
+	li1.add("Markar");
+	
+wclose w1 =new wclose();
+addWindowListener(w1);
+b1.addActionListener(this);
+b2.addActionListener(this);
+b3.addActionListener(this);
+b4.addActionListener(this);
+b5.addActionListener(this);
+b6.addActionListener(this);
+b7.addActionListener(this);
+b8.addActionListener(this);
+b9.addActionListener(this);
+setBackGround(Color.BLUE);
+}//close of de
+public void actionPreformed(ActionEvent ac)
+{
+	if(ac.getSource()==b1)
+	{
+		String  itam=getSelestedItem();
+		li2.add(itam);
+		li1.removeAt(li1.getSelestedIndex();
+	}
+	if(ac.getSource()==b2)
+	{
+		int n=li1.getItemCount();
+	    for(int i=0;i<n;i++)
+	     {
+		String itam=li1.getSelestedItem(i);
+		 	li2.add(itam);
+		}
+		lt1.Clear();
+	}
+
+
+	if(ac.getSource()==b3)
+	{
+		String  itam=getSelestedItem();
+		li1.add(itam);
+		li2.removeAt(li2.getSelestedIndex();
+	}
+	if(ac.getSource()==b4)
+	{
+		int n=li2.getItemCount();
+	    for(int i=0;i<n;i++)
+	     {
+		String itam=li2.getSelestedItem(i);
+		 	li1.add(itam);
+		}
+		li2.Clear();
+	}
+		if(ac.getSource()==b5)
+		{
+			li1.removeAt(li1.getSelestedItem(i);
+			}
+		if(ac.getSource()==b6)
+		{
+			int n=li1.getItemCount();
+		     for(int i=0;i>0;i++)
+		     {
+			String itam=li1.getSelestedItem(i);
+			li1.removeAt(li1.getSelestedItem(i);
+			li1.Clear();
+			}
+		if(ac.getSource()==b7)
+		{
+			li2.removeAt(li2.getSelestedItem(i);
+			}
+		if(ac.getSource()==b8)
+		{
+			int n=li2.getItemCount();
+		     for(int i=0;i>0;i++)
+		     {
+			String itam=li2.getSelestedItem(i);
+			li1.removeAt(li2.getSelestedItem(i);
+			li2.Clear();
+		}
+		if(ac.getSource()==b9)
+		{
+			System.exit(0);
+			}
+		}		
+		
+     }
+class  emain
+{
+	public static void main(String an[])
+	{
+						
+
+		refome k=new refome();
+		     k.de();
+	}
+}			

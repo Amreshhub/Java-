@@ -1,0 +1,3 @@
+javac KeyListenerTester.java
+java KeyListenerTester
+pause

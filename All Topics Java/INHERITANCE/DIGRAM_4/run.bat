@@ -1,0 +1,3 @@
+javac order1_of_bookseilf.java
+java order1_of_bookseilf
+pause

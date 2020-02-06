@@ -1,0 +1,3 @@
+javac MouseListener1.java
+java MouseListener1
+pause
